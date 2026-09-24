@@ -1,0 +1,52 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+rootdir: /home/user/se413-513-assignment-1
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 43 items
+
+tests/test_registration.py::test_registration_allowed_for_valid_scenarios[0-1] PASSED [  2%]
+tests/test_registration.py::test_registration_allowed_for_valid_scenarios[6-2] PASSED [  4%]
+tests/test_registration.py::test_registration_allowed_for_valid_scenarios[12-3] PASSED [  6%]
+tests/test_registration.py::test_registration_allowed_for_valid_scenarios[14-4] PASSED [  9%]
+tests/test_registration.py::test_valid_student_can_register PASSED       [ 11%]
+tests/test_registration.py::test_registration_rejected_when_prerequisite_not_met PASSED [ 13%]
+tests/test_registration.py::test_registration_rejected_when_total_credits_exceed_18 PASSED [ 16%]
+tests/test_registration.py::test_registration_rejected_for_out_of_range_credits[-3-3] PASSED [ 18%]
+tests/test_registration.py::test_registration_rejected_for_out_of_range_credits[20-3] PASSED [ 20%]
+tests/test_registration.py::test_registration_rejected_for_out_of_range_credits[10-0] PASSED [ 23%]
+tests/test_registration.py::test_registration_rejected_for_out_of_range_credits[10-6] PASSED [ 25%]
+tests/test_registration.py::test_current_credits_boundaries[-1-False] PASSED [ 27%]
+tests/test_registration.py::test_current_credits_boundaries[0-True] PASSED [ 30%]
+tests/test_registration.py::test_current_credits_boundaries[1-True] PASSED [ 32%]
+tests/test_registration.py::test_current_credits_boundaries[14-True] PASSED [ 34%]
+tests/test_registration.py::test_current_credits_boundaries[15-True] PASSED [ 37%]
+tests/test_registration.py::test_current_credits_boundaries[16-False] PASSED [ 39%]
+tests/test_registration.py::test_course_credits_boundaries[0-False] PASSED [ 41%]
+tests/test_registration.py::test_course_credits_boundaries[1-True] PASSED [ 44%]
+tests/test_registration.py::test_course_credits_boundaries[2-True] PASSED [ 46%]
+tests/test_registration.py::test_course_credits_boundaries[3-True] PASSED [ 48%]
+tests/test_registration.py::test_course_credits_boundaries[4-True] PASSED [ 51%]
+tests/test_registration.py::test_course_credits_boundaries[5-False] PASSED [ 53%]
+tests/test_registration.py::test_resulting_credit_load_boundaries[13-4-True] PASSED [ 55%]
+tests/test_registration.py::test_resulting_credit_load_boundaries[14-4-True] PASSED [ 58%]
+tests/test_registration.py::test_resulting_credit_load_boundaries[15-3-True] PASSED [ 60%]
+tests/test_registration.py::test_resulting_credit_load_boundaries[15-4-False] PASSED [ 62%]
+tests/test_registration.py::test_fee_below_at_and_above_12_credits[6-600.0] PASSED [ 65%]
+tests/test_registration.py::test_fee_below_at_and_above_12_credits[12-1200.0] PASSED [ 67%]
+tests/test_registration.py::test_fee_below_at_and_above_12_credits[15-1425.0] PASSED [ 69%]
+tests/test_registration.py::test_fee_for_valid_student_after_registration PASSED [ 72%]
+tests/test_registration.py::test_fee_boundaries[0-0.0] PASSED            [ 74%]
+tests/test_registration.py::test_fee_boundaries[1-100.0] PASSED          [ 76%]
+tests/test_registration.py::test_fee_boundaries[11-1100.0] PASSED        [ 79%]
+tests/test_registration.py::test_fee_boundaries[12-1200.0] PASSED        [ 81%]
+tests/test_registration.py::test_fee_boundaries[13-1275.0] PASSED        [ 83%]
+tests/test_registration.py::test_fee_boundaries[17-1575.0] PASSED        [ 86%]
+tests/test_registration.py::test_fee_boundaries[18-1650.0] PASSED        [ 88%]
+tests/test_registration.py::test_fee_raises_error_for_invalid_credits[-5] PASSED [ 90%]
+tests/test_registration.py::test_fee_raises_error_for_invalid_credits[25] PASSED [ 93%]
+tests/test_registration.py::test_fee_raises_error_just_outside_valid_range[-1] PASSED [ 95%]
+tests/test_registration.py::test_fee_raises_error_just_outside_valid_range[19] PASSED [ 97%]
+tests/test_registration.py::test_registration_result_is_saved_to_log PASSED [100%]
+
+============================== 43 passed in 0.04s ==============================
